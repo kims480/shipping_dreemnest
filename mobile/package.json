@@ -1,0 +1,19 @@
+{
+  "name": "dreem-nest-mobile",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Dreem Nest mobile monorepo — Driver, DFP, and End Customer Expo apps built from shared packages.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "driver": "npm run start --workspace=@dreem-nest/driver",
+    "dfp": "npm run start --workspace=@dreem-nest/dfp",
+    "customer": "npm run start --workspace=@dreem-nest/end-customer",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "~5.3.3"
+  }
+}

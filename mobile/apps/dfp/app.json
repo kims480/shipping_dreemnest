@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Dreem Nest DFP",
+    "slug": "dreem-nest-dfp",
+    "scheme": "dreemnest-dfp",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#4B2E6F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "sa.dreemnest.dfp"
+    },
+    "android": {
+      "package": "sa.dreemnest.dfp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4B2E6F"
+      }
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "appRole": "DFP"
+    }
+  }
+}

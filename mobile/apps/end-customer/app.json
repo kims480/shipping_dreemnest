@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Dreem Nest",
+    "slug": "dreem-nest-customer",
+    "scheme": "dreemnest",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#4B2E6F"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "sa.dreemnest.customer"
+    },
+    "android": {
+      "package": "sa.dreemnest.customer",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4B2E6F"
+      }
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "appRole": "END_CUSTOMER"
+    }
+  }
+}

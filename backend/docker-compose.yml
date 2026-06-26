@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dreem_nest
+      POSTGRES_PASSWORD: dreem_nest
+      POSTGRES_DB: dreem_nest
+    ports:
+      - '5432:5432'
+    volumes:
+      - dreem_nest_postgres:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - '6379:6379'
+    volumes:
+      - dreem_nest_redis:/data
+
+volumes:
+  dreem_nest_postgres:
+  dreem_nest_redis:

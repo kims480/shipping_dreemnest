@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Dreem Nest brand palette (from the "D" monogram logo): deep purple as the
+ * primary chrome/CTA color, lime/chartreuse green as the high-energy accent.
+ * Hero UI direction = bold hero sections, card-based layouts, generous
+ * whitespace, confident type — themed to these two colors plus neutrals.
+ * Color tokens are mapped to Tailwind utilities in tailwind.config.ts.
+ */
+:root {
+  --background: #ffffff;
+  --foreground: #1c1530;
+
+  --color-brand-purple: #4b2e6f;
+  --color-brand-purple-dark: #341f4d;
+  --color-brand-purple-light: #6f4ea0;
+  --color-brand-lime: #b5d335;
+  --color-brand-lime-dark: #93ab21;
+
+  --color-surface: #f7f5fb;
+  --color-surface-muted: #ece7f4;
+  --color-border: #ddd6e8;
+
+  --color-status-on-track: #2f9e64;
+  --color-status-at-risk: #e0a721;
+  --color-status-breached: #d8453a;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic), var(--font-sans), sans-serif;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--foreground);
+}
