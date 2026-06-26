@@ -411,3 +411,25 @@ Dreem Nest competes with regional players such as **Mrsool**, **Aramex/SMSA**, a
 4. **Full Rollout** — all 4 Riyadh zones live
 5. **Phase 2** — per-zone warehouse hubs, broader fulfillment capabilities, additional integrations, advanced analytics
 6. **Expansion** — replicate the zone/DFP model beyond Riyadh
+
+
+# Whatsapp Integration
+whatsapp integration will be via wapilot.net
+API Token: 5rFF5Tiiz8SE0OJAh50NhbacHaProX1cU0W2vkFS0S
+
+exapmle for message sending 
+curl -X POST "https://api.wapilot.net/api/v2/INSTANCE_ID/send-message" \ -H "token: YOUR_API_TOKEN" \ -H "Idempotency-Key: send-text-001" \ -H "Content-Type: application/json" \ -d '{"chat_id":"201001234567","text":"Hello from API v2"}'
+
+API Endpoints
+https://api.wapilot.net/api/v2
+
+
+GET
+List API instances
+Returns API-enabled instances available to the authenticated token.
+
+Endpoint
+https://api.wapilot.net/api/v2/instances
+Request Headers
+Header	Required	Description
+token	Yes	Your API token.
