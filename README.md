@@ -1,4 +1,18 @@
 # shipping_dreemnest
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/kims480/shipping_dreemnest.git
+git push -u origin master
+
+# or push an existing repository from the command line
+git remote add origin https://github.com/kims480/shipping_dreemnest.git
+git branch -M master
+git push -u origin master
+
+
 Open Git Bash.
 # Set your username:
    git config --global user.name "YourUsername"
