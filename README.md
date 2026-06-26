@@ -1,5 +1,6 @@
 # shipping_dreemnest
 
+# Initiate Git
 git init
 git add README.md
 git commit -m "first commit"
@@ -13,7 +14,7 @@ git branch -M master
 git push -u origin master
 
 
-Open Git Bash.
+# Open Git Bash.
 # Set your username:
    git config --global user.name "YourUsername"
 # Set your email:
